@@ -7,6 +7,7 @@ const htmlRoutes = require('./routes/htmlRoutes');
 
 const path = require('path');
 
+app.use(express.static('public'));
 app.use(express.urlencoded({extended: true}));
 
 app.use(express.json());
