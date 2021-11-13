@@ -1,7 +1,7 @@
 # NOTE TAKER
 
 ## Live Deployment
-[Deployed Live at Heroku](https://note-taker-tjjames.herokuapp.com/notes)
+[Deployed Live at Heroku](https://note-taker-tjjames.herokuapp.com)
 
 ## Description
 An application that can be used to write and save notes.
