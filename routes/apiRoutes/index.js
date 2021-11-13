@@ -9,10 +9,14 @@ const path = require('path');
 
 // Get notes to display
 router.get('/notes', (req, res) => {
-	res.json(db);
+	if (!db.length) {
+		res.status(404).send('No notes found');
+	} else {
+		res.json(db);
+	}
 });
 
-// Post a new note
+// Post a new note: add UUID and push to db.json
 router.post('/notes', (req, res) => {
 	let note = req.body;
 	note.id = uuid();
